@@ -2,7 +2,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteUrl, editUrl } from '../../features/url/urlSlice';
-import './UrlsListItem.css';
 
 function UrlsListItem({ index, url }) {
   const dispatch = useDispatch();
@@ -21,7 +20,7 @@ function UrlsListItem({ index, url }) {
       <td>
         <button
           type="button"
-          className="editButton"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-normal py-1.5 px-8 rounded"
           onClick={() => dispatch(editUrl(url.id))}
         >
           edit
@@ -31,7 +30,7 @@ function UrlsListItem({ index, url }) {
       <td>
         <button
           type="button"
-          className="deleteButton"
+          className="bg-red-500 hover:bg-red-700 text-white font-normal py-1.5 px-8 rounded"
           onClick={() => dispatch(deleteUrl(url.id))}
         >
           delete
