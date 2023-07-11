@@ -12,10 +12,10 @@ This project was crated with raw CSS, [Create React App](https://github.com/face
 ## Previews -
 
 <div align="center">
-<img src="./previews/1.png" style="max-width: 900px"/>
-<img src="./previews/2.png" style="max-width: 900px" />
-<img src="./previews/3.png" style="max-width: 900px" />
-<img src="./previews/4.png" style="max-width: 900px" />
+<img src="./previews/1.png" style="max-width: 900px; border-style: groove;" />
+<img src="./previews/2.png" style="max-width: 900px; border-style: groove;" />
+<img src="./previews/3.png" style="max-width: 900px; border-style: groove;" />
+<img src="./previews/4.png" style="max-width: 900px; border-style: groove;" />
 </div>
 <br>
 

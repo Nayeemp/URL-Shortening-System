@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteUrl } from '../../features/url/urlSlice';
-import './EditFormPreview.css';
 
 function EditFormPreview() {
   const urls = useSelector((state) => state.url);
@@ -39,7 +38,7 @@ function EditFormPreview() {
       {url && (
       <button
         type="button"
-        className="deleteButton"
+        className="bg-red-500 hover:bg-red-700 text-white font-normal py-1.5 px-8 rounded"
         onClick={() => dispatch(deleteUrl(url.id))}
       >
         delete
